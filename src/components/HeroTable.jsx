@@ -5,8 +5,6 @@ import { Row, Col, Form, Button } from 'react-bootstrap';
 
 function HeroTable() {
 
-    //const {saveData} = props;
-
     const dataDefault = {
         name: '',
         age: '',
@@ -28,7 +26,6 @@ function HeroTable() {
     const handlerOnClick = event => {
         event.preventDefault();
         setArrayCharacters(arrayCharacters.concat(heroForm));
-        // saveData(arrayCharacters);
         setText(dataDefault);
     };
 
@@ -40,7 +37,7 @@ function HeroTable() {
             .concat(currentItem);
         setArrayCharacters(arrayNuevo);
     };
-   
+
     const handlerClickRing = name => {
         const filterArray = arrayCharacters.map(item => {
             return { ...item, useRing: true, useKill: false }
