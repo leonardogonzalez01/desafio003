@@ -1,0 +1,5 @@
+.d-none {
+    display: none;
+}
+.d-tachado{text-decoration:line-through; color:burlywood}
+.d-notachado{text-decoration:limegreen ; color:burlywood}
